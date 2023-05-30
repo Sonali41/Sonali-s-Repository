@@ -18,7 +18,7 @@ public class SwitchToMethod {
 		WebDriver driver=new ChromeDriver(co);
 	    driver.manage().window().maximize();
 	    
-	    driver.navigate().to("https://www.instagram.com/");
+	    driver.navigate().to("https://www.google.com");
 	    
 	    driver.switchTo().activeElement().sendKeys("java",Keys.ENTER);
 

@@ -16,11 +16,11 @@ public class Flib {
 	
 	public String readExcelData(String excelpath, String sheetname, int rownum, int cellnum) throws EncryptedDocumentException, IOException
 	{
-		FileInputStream fis = new FileInputStream(excelpath);
-	    Workbook wb = WorkbookFactory.create(fis);
-	    Sheet sheet = wb.getSheet(sheetname);
-	    Row row = sheet.getRow(rownum);
-	    Cell cell = row.getCell(cellnum);
+		FileInputStream fis = new FileInputStream(excelpath);//pass the excel path
+	    Workbook wb = WorkbookFactory.create(fis);//make the file ready for read
+	    Sheet sheet = wb.getSheet(sheetname);//get into the sheet
+	    Row row = sheet.getRow(rownum);//get into the desired row
+	    Cell cell = row.getCell(cellnum);//get into the desired cell
 	    String data = cell.getStringCellValue();
 	    return data;
 	}

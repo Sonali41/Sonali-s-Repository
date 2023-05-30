@@ -21,7 +21,7 @@ public class RightClickMethod {
 		
 		driver.get("https://www.selenium.dev/downloads/");
 		
-		WebElement mouse = driver.findElement(By.linkText("4.9.0"));
+		WebElement mouse = driver.findElement(By.linkText("4.9.1"));
 		
 		Actions act = new Actions(driver);
 		
