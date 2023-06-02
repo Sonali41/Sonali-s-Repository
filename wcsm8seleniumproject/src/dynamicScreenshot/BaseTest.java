@@ -31,13 +31,13 @@ public class BaseTest {
 		driver.get("http://127.0.0.1:8/login.do;jsessionid=x4dgwdnqfijf");
 	}
 	
-	public void failedMethod(String failedMethod) 
+	public void failedMethodSs(String fMethod) 
 	{
 		try
 		{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File("./screenshots/"+failedMethod+".jpg");
+		File file = new File("./screenshots/"+fMethod+".jpg");
 		Files.copy(src, file);
 		}
 		

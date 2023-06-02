@@ -34,8 +34,8 @@ public class ActitimeDataProvider {
 	{
 		Object[][] dataprovider = new Object[5][2];
 		
-		dataprovider[0][0]="adm5in";
-		dataprovider[1][0]="m4anager";
+		dataprovider[0][0]="admi1n";
+		dataprovider[0][1]="ma1nager";
 		
 		dataprovider[1][0]="admin123";
 		dataprovider[1][1]="manager123";

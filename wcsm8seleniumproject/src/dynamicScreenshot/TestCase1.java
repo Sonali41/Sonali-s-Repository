@@ -4,9 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import testNG.CustomListners;
-@Listeners(CustomListners.class)
+@Listeners(CustomListeners.class)
 public class TestCase1 extends BaseTest {
 	
 	//failed method is listened by listeners annotation

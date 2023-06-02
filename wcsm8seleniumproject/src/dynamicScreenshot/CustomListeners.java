@@ -19,9 +19,9 @@ public class CustomListeners extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String failedMethod = result.getMethod().getMethodName();
-		Reporter.log("Test Case Is Failed due to the:"+failedMethod, true);
-		failedMethod(failedMethod);
+		String fMethod = result.getMethod().getMethodName();
+		Reporter.log("Test Case Is Failed due to the:"+fMethod, true);
+		failedMethodSs(fMethod);
 	}
 
 	@Override
